@@ -1,0 +1,16 @@
+C:\Users\ajani\OneDrive\Desktop\Honour\C#projects\CoreCommerce\CoreCommerce.Application\bin\Debug\net10.0\CoreCommerce.Application.deps.json
+C:\Users\ajani\OneDrive\Desktop\Honour\C#projects\CoreCommerce\CoreCommerce.Application\bin\Debug\net10.0\CoreCommerce.Application.dll
+C:\Users\ajani\OneDrive\Desktop\Honour\C#projects\CoreCommerce\CoreCommerce.Application\bin\Debug\net10.0\CoreCommerce.Application.pdb
+C:\Users\ajani\OneDrive\Desktop\Honour\C#projects\CoreCommerce\CoreCommerce.Application\bin\Debug\net10.0\CoreCommerce.Domain.dll
+C:\Users\ajani\OneDrive\Desktop\Honour\C#projects\CoreCommerce\CoreCommerce.Application\bin\Debug\net10.0\CoreCommerce.Domain.pdb
+C:\Users\ajani\OneDrive\Desktop\Honour\C#projects\CoreCommerce\CoreCommerce.Application\obj\Debug\net10.0\CoreCommerce.Application.csproj.AssemblyReference.cache
+C:\Users\ajani\OneDrive\Desktop\Honour\C#projects\CoreCommerce\CoreCommerce.Application\obj\Debug\net10.0\CoreCommerce.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ajani\OneDrive\Desktop\Honour\C#projects\CoreCommerce\CoreCommerce.Application\obj\Debug\net10.0\CoreCommerce.Application.AssemblyInfoInputs.cache
+C:\Users\ajani\OneDrive\Desktop\Honour\C#projects\CoreCommerce\CoreCommerce.Application\obj\Debug\net10.0\CoreCommerce.Application.AssemblyInfo.cs
+C:\Users\ajani\OneDrive\Desktop\Honour\C#projects\CoreCommerce\CoreCommerce.Application\obj\Debug\net10.0\CoreCommerce.Application.csproj.CoreCompileInputs.cache
+C:\Users\ajani\OneDrive\Desktop\Honour\C#projects\CoreCommerce\CoreCommerce.Application\obj\Debug\net10.0\CoreCommerce.Application.sourcelink.json
+C:\Users\ajani\OneDrive\Desktop\Honour\C#projects\CoreCommerce\CoreCommerce.Application\obj\Debug\net10.0\CoreComm.B33045F5.Up2Date
+C:\Users\ajani\OneDrive\Desktop\Honour\C#projects\CoreCommerce\CoreCommerce.Application\obj\Debug\net10.0\CoreCommerce.Application.dll
+C:\Users\ajani\OneDrive\Desktop\Honour\C#projects\CoreCommerce\CoreCommerce.Application\obj\Debug\net10.0\refint\CoreCommerce.Application.dll
+C:\Users\ajani\OneDrive\Desktop\Honour\C#projects\CoreCommerce\CoreCommerce.Application\obj\Debug\net10.0\CoreCommerce.Application.pdb
+C:\Users\ajani\OneDrive\Desktop\Honour\C#projects\CoreCommerce\CoreCommerce.Application\obj\Debug\net10.0\ref\CoreCommerce.Application.dll
