@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="CoreCommerce.Application/CoreCommerce.Application.csproj" />
+  <Project Path="CoreCommerce.Domain/CoreCommerce.Domain.csproj" />
+  <Project Path="CoreCommerce.Infrastructure/CoreCommerce.Infrastructure.csproj" />
+  <Project Path="CoreCommerce.WebApi/CoreCommerce.WebApi.csproj" />
+</Solution>
