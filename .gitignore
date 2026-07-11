@@ -1,0 +1,80 @@
+# Build outputs
+bin/
+obj/
+out/
+artifacts/
+[Bb]uild/
+[Dd]ebug/
+[Rr]elease/
+
+# Visual Studio / VS Code
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.dbmdl
+*.jfm
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+.project.lock.json
+
+# Logs
+*.log
+logs/
+
+# Environment / secrets
+.env
+.env.*
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+*.pfx
+*.pem
+*.key
+*.crt
+*.cer
+*.pub
+*.token
+*.password
+*.psd1
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
+*.swp
+*.swo
+
+# Test results
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+
+# SQL / local DB files
+*.db
+*.sqlite
+*.sqlite3
+*.ldf
+*.mdf
+
+# Rider / JetBrains
+.idea/
+*.iml
+
+# Azure / cloud local settings
+*.publishsettings
+
+# Local tool/runtime state
+*.local.json
+*.runtimeconfig.json
