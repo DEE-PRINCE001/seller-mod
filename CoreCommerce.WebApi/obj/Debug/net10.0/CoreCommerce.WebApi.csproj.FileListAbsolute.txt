@@ -142,3 +142,5 @@ C:\Users\ajani\OneDrive\Desktop\Honour\C#projects\CoreCommerce\CoreCommerce.WebA
 C:\Users\ajani\OneDrive\Desktop\Honour\C#projects\CoreCommerce\CoreCommerce.WebApi\obj\Debug\net10.0\CoreCommerce.WebApi.pdb
 C:\Users\ajani\OneDrive\Desktop\Honour\C#projects\CoreCommerce\CoreCommerce.WebApi\obj\Debug\net10.0\CoreCommerce.WebApi.genruntimeconfig.cache
 C:\Users\ajani\OneDrive\Desktop\Honour\C#projects\CoreCommerce\CoreCommerce.WebApi\obj\Debug\net10.0\ref\CoreCommerce.WebApi.dll
+C:\Users\ajani\OneDrive\Desktop\Honour\C#projects\CoreCommerce\CoreCommerce.WebApi\bin\Debug\net10.0\BCrypt-Net-Next.dll
+C:\Users\ajani\OneDrive\Desktop\Honour\C#projects\CoreCommerce\CoreCommerce.WebApi\bin\Debug\net10.0\Microsoft.Bcl.Cryptography.dll

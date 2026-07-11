@@ -1,10 +1,11 @@
 using CoreCommerce.Domain.Entities;
 using CoreCommerce.Domain.Common;
 using Microsoft.EntityFrameworkCore;
+using CoreCommerce.Application.Common.Interfaces;
 
 namespace CoreCommerce.Infrastructure.Data;
 
-public class ApplicationDbContext : DbContext
+public class ApplicationDbContext : DbContext, IApplicationDbContext
 {
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
     {

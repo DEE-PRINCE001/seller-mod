@@ -995,7 +995,8 @@
         "dependencies": {
           "CoreCommerce.Domain": "1.0.0",
           "FluentValidation.DependencyInjectionExtensions": "12.1.1",
-          "MediatR": "14.2.0"
+          "MediatR": "14.2.0",
+          "Microsoft.EntityFrameworkCore": "10.0.9"
         },
         "compile": {
           "bin/placeholder/CoreCommerce.Application.dll": {}

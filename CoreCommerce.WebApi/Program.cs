@@ -1,18 +1,20 @@
+using CoreCommerce.Application;
 using CoreCommerce.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// 1. Add services to the container.
+// Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddApplication();
 // builder.Services.AddSwaggerGen();
 
-// 2. Register our Infrastructure Layer (Database context, etc.)
+// Register our Infrastructure Layer (Database context, etc.)
 builder.Services.AddInfrastructure(builder.Configuration);
 
 var app = builder.Build();
 
-// 3. Configure the HTTP request pipeline.
+// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     // app.UseSwagger();
