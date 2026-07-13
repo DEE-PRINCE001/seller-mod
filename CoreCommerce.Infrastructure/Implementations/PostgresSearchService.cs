@@ -2,8 +2,7 @@ using CoreCommerce.Application.Common.Interfaces;
 using CoreCommerce.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace CoreCommerce.Infrastructure.Implementations.Search;
-
+namespace CoreCommerce.Infrastructure.Implementations;
 public class PostgresSearchService : ISearchService
 {
     public IQueryable<Product> SearchProducts(IQueryable<Product> query, string searchTerm)
