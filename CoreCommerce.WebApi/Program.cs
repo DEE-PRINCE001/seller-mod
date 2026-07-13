@@ -38,12 +38,12 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddApplication();
 // builder.Services.AddSwaggerGen();
 
-// Register our Infrastructure Layer (Database context, etc.)
+// Register the Infrastructure Layer 
 builder.Services.AddInfrastructure(builder.Configuration);
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+//Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     // app.UseSwagger();

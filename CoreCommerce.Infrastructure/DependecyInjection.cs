@@ -1,5 +1,6 @@
 using CoreCommerce.Application.Common.Interfaces;
 using CoreCommerce.Infrastructure.Data;
+using CoreCommerce.Infrastructure.Implementations.Search;
 using CoreCommerce.Infrastructure.Security;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -17,6 +18,7 @@ public static class DependencyInjection
             options.UseNpgsql(connectionString, b => 
                 b.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName)));
         services.AddScoped<IApplicationDbContext>(provider => provider.GetRequiredService<ApplicationDbContext>());
+        services.AddScoped<ISearchService, PostgresSearchService>();
         services.AddScoped<IPasswordHasher, PasswordHasher>();
         services.AddScoped<IJwtTokenGenerator, JwtTokenGenerator>();
 
