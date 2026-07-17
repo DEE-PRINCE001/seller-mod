@@ -1,7 +1,9 @@
 using CoreCommerce.Domain.Entities;
+using CoreCommerce.Domain.Entities.OrderEntities;
 using CoreCommerce.Domain.Common;
 using Microsoft.EntityFrameworkCore;
 using CoreCommerce.Application.Common.Interfaces;
+using Microsoft.EntityFrameworkCore.Storage;
 
 namespace CoreCommerce.Infrastructure.Data;
 
@@ -14,6 +16,8 @@ public class ApplicationDbContext : DbContext, IApplicationDbContext
     public DbSet<User> Users => Set<User>();
     public DbSet<Product> Products => Set<Product>();
     public DbSet<Category> Categories => Set<Category>();
+    public DbSet<Order> Orders => Set<Order>();
+    public DbSet<OrderItem> OrderItems => Set<OrderItem>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -39,5 +43,10 @@ public class ApplicationDbContext : DbContext, IApplicationDbContext
         }
 
         return base.SaveChangesAsync(cancellationToken);
+    }
+
+    public async Task<IDbContextTransaction> BeginTransactionAsync(CancellationToken cancellationToken = default)
+    {
+        return await Database.BeginTransactionAsync(cancellationToken);
     }
 }

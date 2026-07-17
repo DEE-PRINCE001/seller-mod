@@ -39,7 +39,7 @@ public class RegisterUserCommandHandler : IRequestHandler<RegisterUserCommand, R
             LastName = request.LastName,
             Email = request.Email,
             PasswordHash = hashedPassword,
-            Role = UserRole.Customer
+            Role = UserRole.Admin
         };
 
         // 4. Persist data to PostgreSQL

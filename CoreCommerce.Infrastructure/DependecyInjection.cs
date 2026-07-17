@@ -21,10 +21,11 @@ public static class DependencyInjection
         services.AddScoped<ISearchService, PostgresSearchService>();
         services.AddScoped<IPasswordHasher, PasswordHasher>();
         services.AddScoped<IJwtTokenGenerator, JwtTokenGenerator>();
+        services.AddScoped<IPaymentService, MockPaymentService>();
         
         services.AddStackExchangeRedisCache(options =>
         {
-            options.Configuration = configuration.GetConnectionString("RedisConnection") ?? "localhost:6379";
+            options.Configuration = configuration.GetConnectionString("RedisConnection");
             options.InstanceName = "CoreCommerce_";
         });
 
