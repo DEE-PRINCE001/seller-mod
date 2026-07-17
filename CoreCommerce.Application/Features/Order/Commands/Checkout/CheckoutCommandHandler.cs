@@ -1,11 +1,10 @@
 using MediatR;
-using FluentValidation;
 using Microsoft.EntityFrameworkCore;
-using CoreCommerce.Domain.Entities;
 using CoreCommerce.Domain.Enums;
 using CoreCommerce.Application.Common.Interfaces;
+using CoreCommerce.Domain.Entities.OrderEntities;
 
-namespace CoreComerce.Application.Orders.Commands.Checkout;
+namespace CoreComerce.Application.Features.Order.Commands.Checkout;
 
 public class CheckoutCommandHandler : IRequestHandler<CheckoutCommand, Guid>
 {
@@ -35,7 +34,7 @@ public class CheckoutCommandHandler : IRequestHandler<CheckoutCommand, Guid>
         try
         {
             var orderId = Guid.NewGuid();
-            var order = new Order
+            var order = new CoreCommerce.Domain.Entities.OrderEntities.Order
             {
                 Id = orderId,
                 UserId = request.UserId,

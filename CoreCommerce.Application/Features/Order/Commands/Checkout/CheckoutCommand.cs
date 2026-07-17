@@ -5,7 +5,7 @@ using CoreCommerce.Domain.Entities;
 using CoreCommerce.Domain.Enums;
 using CoreCommerce.Application.Common.Interfaces;
 
-namespace CoreCommerce.Application.Orders.Commands.Checkout;
+namespace CoreComerce.Application.Features.Order.Commands.Checkout;
 
 public record CheckoutCommand : IRequest<Guid>
 {

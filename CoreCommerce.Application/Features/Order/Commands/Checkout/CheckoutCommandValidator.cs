@@ -1,7 +1,7 @@
-using CoreCommerce.Application.Orders.Commands.Checkout;
+
 using FluentValidation;
 
-namespace CoreCommerce.Application.Features.Checkout;
+namespace CoreComerce.Application.Features.Order.Commands.Checkout;
 public class CheckoutCommandValidator : AbstractValidator<CheckoutCommand>
 {
     public CheckoutCommandValidator()
