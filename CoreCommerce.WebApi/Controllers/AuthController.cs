@@ -2,11 +2,14 @@ using CoreCommerce.Application.Features.Auth.Commands.Login;
 using CoreCommerce.Application.Features.Auth.Commands.Register;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.RateLimiting;
 
 namespace CoreCommerce.WebApi.Controllers;
 
+
 [ApiController]
 [Route("api/[controller]")]
+[EnableRateLimiting("StrictApiPolicy")]
 public class AuthController : ControllerBase
 {
     private readonly ISender _mediator;

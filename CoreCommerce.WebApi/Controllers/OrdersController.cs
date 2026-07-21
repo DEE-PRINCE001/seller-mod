@@ -6,12 +6,14 @@ using CoreCommerce.Domain.Enums;
 using CoreCommerce.Application.Features.Order.Queries.GetOrder;
 using CoreCommerce.Application.Features.Order.Commands.UpdateOrderStatus;
 using CoreComerce.Application.Features.Order.Commands.Checkout;
+using Microsoft.AspNetCore.RateLimiting;
 
 namespace CoreCommerce.WebApi.Controllers;
 
 [ApiController]
 [Route("api/orders")]
 [Authorize]
+[EnableRateLimiting("StrictApiPolicy")]
 public class OrdersController : ControllerBase
 {
     private readonly IMediator _mediator;

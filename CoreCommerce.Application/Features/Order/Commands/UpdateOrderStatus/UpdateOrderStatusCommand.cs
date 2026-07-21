@@ -1,7 +1,7 @@
 using CoreCommerce.Domain.Enums;
 using MediatR;
 
-namespace CoreCommerce.Application.Orders.Commands.UpdateOrderStatus;
+namespace CoreCommerce.Application.Features.Order.Commands.UpdateOrderStatus;
 public record UpdateOrderStatusCommand : IRequest
 {
     public Guid OrderId { get; init; }
