@@ -1,5 +1,8 @@
+using CoreCommerce.Application.Features.Auth.Commands.ForgotPassword;
 using CoreCommerce.Application.Features.Auth.Commands.Login;
+using CoreCommerce.Application.Features.Auth.Commands.RefreshToken;
 using CoreCommerce.Application.Features.Auth.Commands.Register;
+using CoreCommerce.Application.Features.Auth.Commands.ResetPassword;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.RateLimiting;
@@ -31,5 +34,27 @@ public class AuthController : ControllerBase
     {
         var result = await _mediator.Send(command);
         return Ok(result);
+    }
+
+    [HttpPost("refresh-token")]
+    public async Task<IActionResult> Refresh([FromBody] RefreshTokenCommand command)
+    {
+        var result = await _mediator.Send(command);
+        return Ok(result);
+    }
+
+
+    [HttpPost("forgot-password")]
+    public async Task<IActionResult> ForgotPassword([FromBody] ForgotPasswordCommand command)
+    {
+        var messageOrToken = await _mediator.Send(command);
+        return Ok(new { message = messageOrToken });
+    }
+
+    [HttpPost("reset-password")]
+    public async Task<IActionResult> ResetPassword([FromBody] ResetPasswordCommand command)
+    {
+        await _mediator.Send(command);
+        return Ok(new { message = "Password has been updated successfully." });
     }
 }

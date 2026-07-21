@@ -50,4 +50,29 @@ public class JwtTokenGenerator : IJwtTokenGenerator
         rng.GetBytes(randomNumber);
         return Convert.ToBase64String(randomNumber);
     }
+
+    public ClaimsPrincipal GetPrincipalFromExpiredToken(string token)
+    {
+        var tokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateAudience = true,
+            ValidateIssuer = true,
+            ValidIssuer = _configuration["JwtSettings:Issuer"],
+            ValidAudience = _configuration["JwtSettings:Audience"],
+            ValidateIssuerSigningKey = true,
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JwtSettings:Secret"]!)),
+            ValidateLifetime = false // Critical: We want to read claims from an EXPIRED token
+        };
+
+        var tokenHandler = new JwtSecurityTokenHandler();
+        var principal = tokenHandler.ValidateToken(token, tokenValidationParameters, out var securityToken);
+
+        if (securityToken is not JwtSecurityToken jwtSecurityToken ||
+            !jwtSecurityToken.Header.Alg.Equals(SecurityAlgorithms.HmacSha256, StringComparison.InvariantCultureIgnoreCase))
+        {
+            throw new SecurityTokenException("Invalid token format.");
+        }
+
+        return principal;
+    }
 }
